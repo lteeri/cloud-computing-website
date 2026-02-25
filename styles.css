@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#score {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#colorBox {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto 20px;
+  border: 2px solid #333;
+}
+
+.buttons button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#feedback {
+  font-size: 20px;
+  margin-top: 15px;
+  min-height: 24px;
+}
+
+#rgbValue {
+  margin-top: 10px;
+  font-family: monospace;
+}
+
+.startButton {
+    font-size: 18px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: greenyellow;
+}

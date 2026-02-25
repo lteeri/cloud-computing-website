@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>RGB Guess Game</title>
+
+  <!--Teachable machine-->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
+
+  <!--Styles-->
+  <link rel="stylesheet" href="styles.css">
+  </link>
+
 </head>
+
 <body>
-    <p>This is the index page.</p>
+
+  <div>Teachable Machine Audio Model</div>
+  <button class="startButton" type="button" onclick="init()">Start Audio Game</button>
+  <div id="label-container"></div>
+
+  <h1>RGB Guessing Game 🎨</h1>
+
+  <h3>Rules: Say out loud the color (Red/Green/Blue) that has the greatest value in the color's RGB code.</h3>
+
+  <div id="score">Score: 0</div>
+
+  <div id="colorBox"></div>
+
+
+
+
+  <div class="buttons">
+    <button onclick="handleAnswer('Red')">Red</button>
+    <button onclick="handleAnswer('Green')">Green</button>
+    <button onclick="handleAnswer('Blue')">Blue</button>
+  </div>
+
+  <h2 id="feedback"></h2>
+  <h2 id="rgbValue"></h2>
+
+  <script src="script.js">  </script>
+
 </body>
+
 </html>
